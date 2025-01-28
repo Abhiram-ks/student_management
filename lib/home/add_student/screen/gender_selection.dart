@@ -30,7 +30,7 @@ class GenderSelection extends StatelessWidget {
         ),
         Expanded(
           child: RadioListTile(
-          activeColor: Colors.orange,
+          activeColor: blue,
           title: const Text('G'),
           value: 'G', 
           groupValue: selectedGender, 

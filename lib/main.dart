@@ -1,9 +1,13 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:student_db_01/core/color/colors.dart';
-import 'package:student_db_01/start/splash_screen.dart';
+import 'core/color/colors.dart';
+import 'db/db_helper.dart';
+import 'start/splash_screen.dart';
 
-void main(){
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeDatabase();
   runApp(const MyApp());
 }
 

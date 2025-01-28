@@ -12,19 +12,10 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text(
         title,
-        style: TextStyle(color: Colors.white, fontSize: 23),
+        style: TextStyle(color: black, fontSize: 23),
       ),
-      backgroundColor: Colors.transparent,
-      iconTheme: const IconThemeData(color: Colors.white),
-      flexibleSpace: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft, 
-            end: Alignment.bottomRight, 
-            colors: [black, const Color.fromARGB(255, 165, 165, 165)], 
-          ),
-        ),
-      ),
+      backgroundColor: white,
+      iconTheme: const IconThemeData(color:black),
     );
   }
 
